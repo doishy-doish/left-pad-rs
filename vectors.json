@@ -1,0 +1,158 @@
+[
+ {
+  "str": "hello",
+  "len": 10,
+  "ch": null,
+  "expected": "     hello"
+ },
+ {
+  "str": "hello",
+  "len": 5,
+  "ch": null,
+  "expected": "hello"
+ },
+ {
+  "str": "hello",
+  "len": 3,
+  "ch": null,
+  "expected": "hello"
+ },
+ {
+  "str": "hello",
+  "len": 0,
+  "ch": null,
+  "expected": "hello"
+ },
+ {
+  "str": "hello",
+  "len": -2,
+  "ch": null,
+  "expected": "hello"
+ },
+ {
+  "str": "",
+  "len": 5,
+  "ch": null,
+  "expected": "     "
+ },
+ {
+  "str": "",
+  "len": 0,
+  "ch": null,
+  "expected": ""
+ },
+ {
+  "str": "abc",
+  "len": 9,
+  "ch": null,
+  "expected": "      abc"
+ },
+ {
+  "str": "abc",
+  "len": 10,
+  "ch": null,
+  "expected": "       abc"
+ },
+ {
+  "str": "abc",
+  "len": 11,
+  "ch": null,
+  "expected": "        abc"
+ },
+ {
+  "str": "hi",
+  "len": 6,
+  "ch": "-",
+  "expected": "----hi"
+ },
+ {
+  "str": "hi",
+  "len": 6,
+  "ch": "ab",
+  "expected": "ababababhi"
+ },
+ {
+  "str": "hi",
+  "len": 7,
+  "ch": "ab",
+  "expected": "abababababhi"
+ },
+ {
+  "str": "hi",
+  "len": 20,
+  "ch": "ab",
+  "expected": "ababababababababababababababababababhi"
+ },
+ {
+  "str": "x",
+  "len": 4,
+  "ch": "0",
+  "expected": "000x"
+ },
+ {
+  "str": "x",
+  "len": 4,
+  "ch": "7",
+  "expected": "777x"
+ },
+ {
+  "str": "123",
+  "len": 6,
+  "ch": null,
+  "expected": "   123"
+ },
+ {
+  "str": "null",
+  "len": 6,
+  "ch": null,
+  "expected": "  null"
+ },
+ {
+  "str": "undefined",
+  "len": 4,
+  "ch": ".",
+  "expected": "undefined"
+ },
+ {
+  "str": "test",
+  "len": 100,
+  "ch": null,
+  "expected": "                                                                                                test"
+ },
+ {
+  "str": "test",
+  "len": 100,
+  "ch": "-",
+  "expected": "------------------------------------------------------------------------------------------------test"
+ },
+ {
+  "str": "pad",
+  "len": 12,
+  "ch": " ",
+  "expected": "         pad"
+ },
+ {
+  "str": "héllo",
+  "len": 8,
+  "ch": null,
+  "expected": "   héllo"
+ },
+ {
+  "str": "日本語",
+  "len": 6,
+  "ch": null,
+  "expected": "   日本語"
+ },
+ {
+  "str": "😀",
+  "len": 5,
+  "ch": null,
+  "expected": "   😀"
+ },
+ {
+  "str": "😀😀",
+  "len": 6,
+  "ch": "-",
+  "expected": "--😀😀"
+ }
+]
