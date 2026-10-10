@@ -1,4 +1,17 @@
-const SPACES: [&str; 10] = ["", " ", "  ", "   ", "    ", "     ", "      ", "       ", "        ", "         "];
+fn cached_spaces(pad_len: usize) -> &'static str {
+    match pad_len {
+        0 => "",
+        1 => " ",
+        2 => "  ",
+        3 => "   ",
+        4 => "    ",
+        5 => "     ",
+        6 => "      ",
+        7 => "       ",
+        8 => "        ",
+        _ => "         ",
+    }
+}
 
 pub fn left_pad(s: &str, len: usize, ch: Option<&str>) -> String {
     let s_len = s.encode_utf16().count();
@@ -12,7 +25,7 @@ pub fn left_pad(s: &str, len: usize, ch: Option<&str>) -> String {
     };
     if ch == " " && pad_len < 10 {
         let mut out = String::with_capacity(len);
-        out.push_str(SPACES[pad_len]);
+        out.push_str(cached_spaces(pad_len));
         out.push_str(s);
         return out;
     }
