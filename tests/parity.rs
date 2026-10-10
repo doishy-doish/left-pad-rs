@@ -1,8 +1,5 @@
+use left_pad_rs::left_pad;
 use serde_json::Value;
-
-#[path = "../src-lib.rs"]
-mod lib_rs;
-use lib_rs::left_pad;
 
 #[test]
 fn parity_with_original_js() {
