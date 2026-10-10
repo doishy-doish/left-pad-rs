@@ -1,0 +1,9 @@
+[package]
+name = "left-pad-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Rust port of the archived left-pad JS package (parity-tested)"
+license = "MIT"
+
+[dev-dependencies]
+serde_json = "1"
